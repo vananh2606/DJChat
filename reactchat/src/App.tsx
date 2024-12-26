@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@emotion/react"
 import Home from "./pages/Home"
+import Explore from "./pages/Explore"
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -12,6 +13,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<Home />} />
+      <Route path="/explore/:categoryName" element={<Explore />} />
     </Route>
   )
 )
